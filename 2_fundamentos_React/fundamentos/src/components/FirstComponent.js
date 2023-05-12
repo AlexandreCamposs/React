@@ -1,6 +1,15 @@
+//importaçoes
+import MyComponent from "./MyComponent";
+
 const FirstComponent = () =>{
+//comentário.
   return(
-    <div>Primeiro componente</div>
+    <div>
+      {/*comentário */}
+      <h1>Primeiro componente</h1>
+      <p className="teste">Testando propriedade.</p>
+      <MyComponent/>
+      </div>
   )
 }
 

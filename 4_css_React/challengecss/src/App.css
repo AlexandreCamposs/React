@@ -1,13 +1,11 @@
-
 .App {
   text-align: center;
-  font-size: 2rem;
-  margin-top: 2rem;
-  background-color: #282c34;
-  color: white;
-  padding: 1rem;
 }
-
+h1 {
+  color: orange;
+  background-color: #282c34;
+  padding: 2rem;
+}
 
 .App-logo {
   height: 40vmin;
