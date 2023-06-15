@@ -1,3 +1,9 @@
 {
-  "products": []
+  "products": [
+    {
+      "name": "desenvolvimento",
+      "price": "299.90",
+      "id": 1
+    }
+  ]
 }
