@@ -5,11 +5,11 @@ import { useState, useEffect } from 'react';
 import { useAuthentication } from '../../hooks/useAuthentication';
 
 const Register = () => {
-  const [displayName, setDisplayName] = useState();
-  const [email, setEmail] = useState();
-  const [password, setPassword] = useState();
-  const [confirmPassword, setConfirmPassword] = useState();
-  const [error, setError] = useState();
+  const [displayName, setDisplayName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
+  const [error, setError] = useState('');
 
   const { createUser, error: AuthError, loading } = useAuthentication();
 
@@ -30,7 +30,6 @@ const Register = () => {
     }
 
     const res = await createUser(user);
-    console.log(res);
   };
 
   useEffect(() => {
