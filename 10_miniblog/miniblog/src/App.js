@@ -18,6 +18,8 @@ import Login from './pages/Login/Login';
 import Register from './pages/Register/Register';
 import DashBoard from './pages/DashBoard/DashBoard';
 import CreatePost from './pages/CreatePost/CreatePost';
+import Search from './pages/Search/Search';
+import Post from './pages/Post/Post';
 
 function App() {
   const [user, setUser] = useState(undefined);
@@ -44,6 +46,8 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
+              <Route path="/search" element={<Search />} />
+              <Route path="/post/:id" element={<Post />} />
               <Route
                 path="/login"
                 element={!user ? <Login /> : <Navigate to="/" />}
