@@ -21,6 +21,7 @@ const HookUseCallback = () => {
       <List getItems={getItemsFromDatabase} />
       <button onClick={() => setCounter(counter + 1)}>Alterar!</button>
       <p>{counter}</p>
+      <hr />
     </div>
   );
 };
