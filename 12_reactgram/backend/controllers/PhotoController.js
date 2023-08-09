@@ -1,11 +1,11 @@
-const Photo = require('../models/Photo');
 const User = require('../models/User');
+const Photo = require('../models/Photo');
 const mongoose = require('mongoose');
 
 // Insert a photo, with an user related to it
 const insertPhoto = async (req, res) => {
   const { title } = req.body;
-  const image = req.file.fillename;
+  const image = req.file.filename;
 
   // console.log(req.body);
   const reqUser = req.user;
