@@ -159,7 +159,7 @@ const likePhoto = async (req, res) => {
 // Comment functionality
 const commentPhoto = async (req, res) => {
   const { id } = req.params;
-  const { comments } = req.body;
+  const { comment } = req.body;
 
   const reqUser = req.user;
 
@@ -173,9 +173,9 @@ const commentPhoto = async (req, res) => {
     return;
   }
 
-  // Put comment in the array comments
+  // Put comment in the array of comments
   const userComment = {
-    comments,
+    comment,
     userName: user.name,
     userImage: user.profileImage,
     userId: user._id,
@@ -187,7 +187,7 @@ const commentPhoto = async (req, res) => {
 
   res.status(200).json({
     comment: userComment,
-    message: 'O comentário foi adicionado com sucesso!',
+    message: 'Comentário adicionado com sucesso!',
   });
 };
 
