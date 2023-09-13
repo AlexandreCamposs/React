@@ -6,6 +6,9 @@ import './MoviesGrid.css';
 const moviesURL = import.meta.env.VITE_API;
 const apiKey = import.meta.env.VITE_API_KEY;
 
+console.log(moviesURL);
+console.log(apiKey);
+
 const Home = () => {
   // console.log(moviesURL);
   // console.log(apiKey);
@@ -23,7 +26,7 @@ const Home = () => {
 
   useEffect(() => {
     const topRatedUrl = `${moviesURL}top_rated?${apiKey}`;
-    // console.log(topRatedUrl);
+    console.log(topRatedUrl);
 
     getTopRatedMovies(topRatedUrl);
   }, []);

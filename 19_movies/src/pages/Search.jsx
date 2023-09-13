@@ -27,7 +27,7 @@ const Search = () => {
 
     getSearchMovies(searchWithQueryURL);
   }, [query]);
-
+console.log(movies);
   return (
     <div className="container">
       <h2 className="title">
